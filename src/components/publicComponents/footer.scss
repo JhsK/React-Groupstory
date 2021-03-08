@@ -1,0 +1,14 @@
+.footer {
+  padding: 1rem;
+  text-align: center;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 1rem;
+      font-size: 0.8rem;
+      color: #b6b6b6;
+    }
+  }
+}

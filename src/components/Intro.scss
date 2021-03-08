@@ -1,0 +1,108 @@
+.Intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 1rem;
+
+      li {
+        margin-bottom: 1rem;
+
+        &:nth-child(1) {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          font-size: 0.9rem;
+          color: #838383;
+        }
+
+        button {
+          padding: 0.7rem 1rem;
+          border-radius: 10px;
+          background-color: #762be8;
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          width: 120px;
+        }
+      }
+    }
+
+    figure {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 360px;
+      height: 300px;
+      margin: 0 1rem;
+      a {
+        display: none;
+      }
+    }
+    &:nth-child(1) {
+      figure {
+        background-image: url("../image/Group\ therapy-rafiki.png");
+        height: 350px;
+        padding-bottom: 2rem;
+      }
+    }
+    &:nth-child(2) {
+      figure {
+        background-image: url("../image/Search engines-rafiki.png");
+        padding-left: 4rem;
+      }
+    }
+    &:nth-child(3) {
+      figure {
+        background-image: url("../image/Onboarding-cuate.png");
+      }
+    }
+    &:nth-child(4) {
+      figure {
+        background-image: url("../image/Team\ work-amico.png");
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      &:nth-child(2) {
+        margin-bottom: 4rem;
+        ul {
+          order: 1;
+          margin-bottom: 3rem;
+        }
+        figure {
+          order: 3;
+        }
+      }
+      &:nth-child(4) {
+        ul {
+          order: 1;
+          margin-bottom: 3rem;
+        }
+        figure {
+          order: 3;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    padding-top: 130px;
+  }
+}

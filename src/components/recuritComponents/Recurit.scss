@@ -1,0 +1,45 @@
+.recurit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+// .header {
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+// }
+
+.aside {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6bbac;
+}
+
+.section {
+  padding: 0 1em;
+}
+
+@media (min-width: 1020px) {
+  .aside {
+    width: 200px;
+    position: static;
+    display: block !important;
+    z-index: 0;
+  }
+  .recurit-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 1em;
+  }
+  .section {
+    width: 100%;
+  }
+}

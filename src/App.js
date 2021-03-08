@@ -1,10 +1,13 @@
 import React, { useState, useCallback } from "react";
+import { Route } from "react-router-dom";
+import { animateScroll as aniScroll } from "react-scroll";
+
+import "./App.css";
 import Nav from "./components/publicComponents/nav";
 import Intro from "./components/Intro";
 import Footer from "./components/publicComponents/footer";
 import ScroollTop from "./components/publicComponents/ScrollTop";
-import { Route } from "react-router-dom";
-import { animateScroll as aniScroll } from "react-scroll";
+import Recurit from "./components/recuritComponents/Recurit";
 
 const App = () => {
   const [color, setColor] = useState("#000000");
@@ -26,6 +29,7 @@ const App = () => {
     <div onWheel={onScrollEvent}>
       <Route path={["/", "/recurit"]} component={Nav} />
       <Route path="/" component={Intro} exact />
+      <Route path="/recurit" component={Recurit} exact />
       <Footer />
       <ScroollTop color={color} onClick={scrollToTop} />
     </div>

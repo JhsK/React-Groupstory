@@ -11,6 +11,8 @@ body {
   border-bottom: 1px solid #e5e5e5;
   position: fixed;
   top: 0;
+  height: 85px;
+  z-index: 1;
 
   figure {
     background-image: url("../../image/pinterest_profile_image-removebg-preview\ \(2\).png");

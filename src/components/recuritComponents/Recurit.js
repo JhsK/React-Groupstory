@@ -3,9 +3,9 @@ import Card from "./Card";
 import CardFilter from "./CardFilter";
 import "./Recurit.scss";
 
-const Recurit = () => {
+const Recurit = (paddingObject) => {
   return (
-    <div className="recurit-container">
+    <div className="recurit-container" style={{ paddingObject }}>
       <aside className="aside">
         <CardFilter />
       </aside>

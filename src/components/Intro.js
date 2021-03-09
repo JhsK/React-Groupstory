@@ -1,7 +1,8 @@
 import React from "react";
 import "./Intro.scss";
 
-const Intro = () => {
+const Intro = ({ paddingObject }) => {
+  console.log(paddingObject);
   return (
     <div className="Intro">
       <div className="section">

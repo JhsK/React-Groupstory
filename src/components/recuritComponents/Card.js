@@ -3,136 +3,136 @@ import "./Card.scss";
 
 const Card = () => {
   return (
-    <ul class="card-ul">
-      <li class="card-item">
-        <figure class="card-img">
+    <ul className="card-ul">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>
-      <li class="card-item">
-        <figure class="card-img">
+      <li className="card-item">
+        <figure className="card-img">
           <img alt="test" />
         </figure>
-        <div class="card-content">
-          <span class="cardTitle">허브(HUB)</span>
-          <ul class="card-content-ul">
-            <li class="card-content-item">동아리</li>
-            <li class="card-content-item">IT-보안</li>
+        <div className="card-content">
+          <span className="cardTitle">허브(HUB)</span>
+          <ul className="card-content-ul">
+            <li className="card-content-item">동아리</li>
+            <li className="card-content-item">IT-보안</li>
           </ul>
         </div>
       </li>

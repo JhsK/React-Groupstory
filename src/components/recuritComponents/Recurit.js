@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import Card from "./Card";
 import CardFilter from "./CardFilter";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -34,11 +34,11 @@ const reducer = (state, action) => {
 const Recurit = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { hambergerState, closeState } = state;
-  // const [hambergerState, setHambergerState] = useState("null");
+
   const onClickHambergerBtn = () => {
-    // setHambergerState("flex");
     dispatch({ type: HAMBERGER_CHANGE });
   };
+
   return (
     <div className="recurit-container">
       <aside className="aside" style={{ display: hambergerState }}>

@@ -1,4 +1,4 @@
-import React, { useState, memo, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
 import "./CardFilter.scss";
@@ -9,28 +9,31 @@ const CardFilter = ({ closeState, dispatch }) => {
   const [arrowIt, setArrowIt] = useState(false);
   const [arrowMajor, setArrowMajor] = useState(false);
 
-  const onClickArrow = useCallback((e) => {
-    console.log(e.target.classList[1]);
-    if (e.target.classList[1] === "sport") {
-      if (arrowSport === false) {
-        setArrowSport(true);
-      } else {
-        setArrowSport(false);
+  const onClickArrow = useCallback(
+    (e) => {
+      if (e.target.classList[1] === "sport") {
+        console.log(arrowSport);
+        if (arrowSport === false) {
+          setArrowSport(true);
+        } else {
+          setArrowSport(false);
+        }
+      } else if (e.target.classList[1] === "It") {
+        if (arrowIt === false) {
+          setArrowIt(true);
+        } else {
+          setArrowIt(false);
+        }
+      } else if (e.target.classList[1] === "Major") {
+        if (arrowMajor === false) {
+          setArrowMajor(true);
+        } else {
+          setArrowMajor(false);
+        }
       }
-    } else if (e.target.classList[1] === "It") {
-      if (arrowIt === false) {
-        setArrowIt(true);
-      } else {
-        setArrowIt(false);
-      }
-    } else if (e.target.classList[1] === "Major") {
-      if (arrowMajor === false) {
-        setArrowMajor(true);
-      } else {
-        setArrowMajor(false);
-      }
-    }
-  }, []);
+    },
+    [arrowSport, arrowIt, arrowMajor]
+  );
 
   const onClickFilterClose = useCallback(() => {
     dispatch({ type: CLOSE_CHANGE });

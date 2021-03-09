@@ -9,10 +9,6 @@ import Footer from "./components/publicComponents/footer";
 import ScroollTop from "./components/publicComponents/ScrollTop";
 import Recurit from "./components/recuritComponents/Recurit";
 
-const paddingObject = {
-  padding: "130px 0 0 0",
-};
-
 const App = () => {
   const [color, setColor] = useState("#000000");
   const onScrollEvent = useCallback(
@@ -33,11 +29,7 @@ const App = () => {
     <div onWheel={onScrollEvent}>
       <Route path={["/", "/recurit"]} component={Nav} />
       <Route path="/" component={Intro} exact />
-      <Route
-        path="/recurit"
-        render={() => <Recurit paddingObject={paddingObject} />}
-        exact
-      />
+      <Route path="/recurit" render={() => <Recurit />} exact />
       <Footer />
       <ScroollTop color={color} onClick={scrollToTop} />
     </div>

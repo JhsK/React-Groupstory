@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io";
+import { AiOutlineClose } from "react-icons/ai";
 import "./CardFilter.scss";
+import { CLOSE_CHANGE } from "./Recurit";
 
-const CardFilter = () => {
+const CardFilter = ({ closeState, dispatch }) => {
   const [arrowSport, setArrowSport] = useState(false);
   const [arrowIt, setArrowIt] = useState(false);
   const [arrowMajor, setArrowMajor] = useState(false);
@@ -30,8 +32,18 @@ const CardFilter = () => {
     }
   };
 
+  const onClickFilterClose = () => {
+    dispatch({ type: CLOSE_CHANGE });
+  };
+
   return (
     <div className="filter-container">
+      {closeState && (
+        <AiOutlineClose
+          className="filter-closeBtn"
+          onClick={onClickFilterClose}
+        />
+      )}
       <div className="filter-type">
         <span className="filterTitle">유형</span>
         <ul className="filter-ul">

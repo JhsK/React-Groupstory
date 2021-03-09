@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo, useCallback } from "react";
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
 import "./CardFilter.scss";
@@ -9,7 +9,7 @@ const CardFilter = ({ closeState, dispatch }) => {
   const [arrowIt, setArrowIt] = useState(false);
   const [arrowMajor, setArrowMajor] = useState(false);
 
-  const onClickArrow = (e) => {
+  const onClickArrow = useCallback((e) => {
     console.log(e.target.classList[1]);
     if (e.target.classList[1] === "sport") {
       if (arrowSport === false) {
@@ -30,11 +30,11 @@ const CardFilter = ({ closeState, dispatch }) => {
         setArrowMajor(false);
       }
     }
-  };
+  }, []);
 
-  const onClickFilterClose = () => {
+  const onClickFilterClose = useCallback(() => {
     dispatch({ type: CLOSE_CHANGE });
-  };
+  }, []);
 
   return (
     <div className="filter-container">
